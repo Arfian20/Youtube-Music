@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 1800px;
+    background-color: black;
+    overflow-x: hidden;
+}
+h1, h3{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 40px;
+    font-family: 'Work Sans', sans-serif;
+}
+h2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 40px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.artis{
+    display: flex;
+    color: rgb(201, 201, 201);
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+}
+.thumbnail{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 20px; */
+}
+.thumbnail:hover{
+    opacity: 0.6;
+}
+.thumbnail2{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 20px; */
+}
+.thumbnail2:hover{
+    opacity: 0.6;
+}
+.list-lagu{
+    margin-bottom: 180px;
+    }
+header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+    height: 60px;
+    border-bottom: 0.3px solid rgb(131, 126, 126);
+    z-index: 999;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.logo{
+    height: 50px;
+}
+.profile{
+    display: flex;
+}
+.profile img{
+    position: relative;
+    border-radius: 50%;
+    padding: 24px;
+    height: 40px;
+}
+.device{
+    margin-top: 32px;
+}
+.device::before {
+    content: "\f7c0";
+    color: rgb(255, 255, 255);
+    font-family: fontAwesome;
+    font-size: 21px;
+  }
+main{
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+    width: 150vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main .heading  {
+    display: flex;
+    width: 150vh;
+    justify-content: space-between;
+}
+main .heading ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.daftar-lagu{
+    margin-top: 20px;
+    display: flex;
+    width: 170vh;
+    flex-wrap: wrap;
+}
+.card{
+   margin-right: 47px;
+}
+.scroll1::before {
+    content: "\f053";
+    color: rgb(150, 149, 149);
+    font-family: fontAwesome;
+    font-size: 10px;
+    border: 1px solid rgb(150, 149, 149);
+    padding: 15px;
+    border-radius: 50%;
+  }
+.scroll2::before {
+    content: "\f054";
+    color: rgb(255, 255, 255);
+    font-family: fontAwesome;
+    font-size: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 15px;
+    border-radius: 50%;
+  }
+  .pilihan-cepat-radio .card {
+    display: flex;
+    align-items: center;
+}
+  .pilihan-cepat-radio .items {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 150px;
+}
+  .pilihan-cepat-radio .card img{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+  .pilihan-cepat p{
+    color: rgb(201, 201, 201);
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  @media only screen and (min-width: 375px) and (max-width: 667px) {
+
+            h1{
+                font-size: 20px;
+            }
+        .nav {
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(0, 0, 0);
+        transition: all 1s;
+        opacity: 0;
+        }
+        main{
+            width: 50vh;
+            padding: 10px;
+        }
+        main .heading{
+            width: 50vh;
+        }
+
+        .daftar-lagu{
+            width: 50vh;
+            margin-top: 30px;
+        }
+        .card {
+            margin-bottom: 15px;
+            margin-right: 24px;
+        }
+        .artis{
+            font-size: 14px;
+        }
+        .thumbnail{
+            width: 140px;
+            height: 140px;
+            margin-bottom: 5px;
+            border-radius: 7px;
+            /* border-top-right-radius: 0;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 20px; */
+        }
+
+        .thumbnail2{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+            border-radius: 7px;
+            /* border-top-right-radius: 0;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 20px; */
+        }
+        .pilihan-cepat-radio .items{
+            margin-right: 40px;
+        }
+        .pilihan-cepat-radio .judul h2 {
+            font-size: 14px;
+        }
+        .pilihan-cepat-radio .judul p {
+            font-size: 14px;
+        }
+}
+  @media only screen and (min-width: 414px) and (max-width: 896px) {
+        
+            h1{
+                font-size: 20px;
+            }
+        .nav {
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(0, 0, 0);
+        transition: all 1s;
+        opacity: 0;
+        }
+        main{
+            width: 50vh;
+            padding: 20px;
+        }
+        main .heading{
+            width: 40vh;
+        }
+
+        .daftar-lagu{
+            width: 50vh;
+            margin-top: 30px;
+        }
+        .card {
+            margin-bottom: 15px;
+            margin-right:65px;
+        }
+        .artis{
+            font-size: 14px;
+        }
+        .thumbnail{
+            width: 140px;
+            height: 140px;
+            margin-bottom: 5px;
+            border-radius: 7px;
+            /* border-top-right-radius: 0;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 20px; */
+        }
+
+        .thumbnail2{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+            border-radius: 7px;
+            /* border-top-right-radius: 0;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 20px; */
+        }
+        .pilihan-cepat-radio .items{
+            margin-right: 40px;
+        }
+        .pilihan-cepat-radio .judul h2 {
+            font-size: 14px;
+        }
+        .pilihan-cepat-radio .judul p {
+            font-size: 14px;
+        }
+}
+  @media only screen and (min-width: 390px) and (max-width: 844px) {
+        
+            h1{
+                font-size: 20px;
+            }
+        .nav {
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(0, 0, 0);
+        transition: all 1s;
+        opacity: 0;
+        }
+        main{
+            width: 50vh;
+            padding: 20px;
+        }
+        main .heading{
+            width: 42vh;
+        }
+
+        .daftar-lagu{
+            width: 50vh;
+            margin-top: 30px;
+        }
+        .card {
+            margin-bottom: 15px;
+            margin-right:60px;
+        }
+        .artis{
+            font-size: 14px;
+        }
+        .thumbnail{
+            width: 140px;
+            height: 140px;
+            margin-bottom: 5px;
+            border-radius: 7px;
+            /* border-top-right-radius: 0;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 20px; */
+        }
+
+        .thumbnail2{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+            border-radius: 7px;
+            /* border-top-right-radius: 0;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 20px; */
+        }
+        .pilihan-cepat-radio .items{
+            margin-right: 40px;
+        }
+        .pilihan-cepat-radio .judul h2 {
+            font-size: 14px;
+        }
+        .pilihan-cepat-radio .judul p {
+            font-size: 14px;
+        }
+}
